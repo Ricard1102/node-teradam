@@ -52,7 +52,7 @@ exports = module.exports = function (app) {
 	app.get('/', routes.views.home);
 	// app.get('/', routes.views.index);
 	// app.get('/announcement', routes.views.announcement);
-	// app.get('/register', routes.views.register);
+	app.get('/register', routes.views.register);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
 

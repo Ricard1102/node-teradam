@@ -35,12 +35,18 @@
 						<a href="">
 							<i class="fa fa-instagram"></i>
 						</a>
+						{{!--
 						<a href="whatsapp://send?text=https://teradam.com" data-action="share/whatsapp/share">
 							<i class="fa fa-whatsapp"></i>
-						</a>
+						</a> --}} {{!--
 						<a href="whatsapp://send" data-text="Take a look at this awesome website:" data-href="{{data.post.fullPostUrl}}">
 							<i class="fa fa-whatsapp"></i>
+						</a> --}}
+
+						<a href="whatsapp://send?text={{data.post.fullPostUrl}}" data-action="share/whatsapp/share">
+							<i class="fa fa-whatsapp"></i>
 						</a>
+
 					</div>
 
 

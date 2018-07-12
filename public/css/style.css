@@ -575,6 +575,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+
+#header button{
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  outline: none;
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -1126,7 +1138,7 @@ vertical-align: middle;
 
 .box {
   background: rgb(255, 255, 255);
-  padding: 30px 0 2px 4px;
+  padding: 30px 0 0 4px;
   min-height: 360px;
   border-radius: 6px;
   /* -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
@@ -1705,3 +1717,4 @@ margin-top:12px;
   .iframe{
     width: 60px!important;
   }
+
