@@ -24,8 +24,15 @@ var express = require('express');
 var nodemailer = require('nodemailer');
 var path = require('path');
 var importRoutes = keystone.importer(__dirname);
+const httpsRedirect = require('express-https-redirect');
 //STATIC FOLDER
 var app = express();
+
+
+//HTTPS Redirect
+
+app.use('/views', httpsRedirect());
+
 
 app.use('/public', express.static(path.join(__dirname + '/public')));
 
@@ -55,6 +62,9 @@ exports = module.exports = function (app) {
 	// app.get('/register', routes.views.register);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
+
+
+
 
 	// API Routes
 	// app.get('/api/announcement', apiHandlers.getAnnouncements);
